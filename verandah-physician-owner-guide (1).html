@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Physician Owner's Guide to Lake Nona Real Estate — Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #008C82;
+    --teal-light: #00a99d;
+    --teal-dark: #006b63;
+    --teal-mist: #e8f5f4;
+    --teal-deep: #004d47;
+    --gold: #D4AF50;
+    --gold-light: #e8c96a;
+    --gold-mist: #fdf8ec;
+    --gold-dark: #a8882a;
+    --ink: #151510;
+    --ink-mid: #3a3a35;
+    --ink-soft: #6b6b63;
+    --cream: #faf8f2;
+    --cream-dark: #f2ede3;
+    --white: #ffffff;
+    --rule: #e0dbd0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ═══════════════════════════════════
+     COVER — Dark luxury with gold geometry
+  ═══════════════════════════════════ */
+  .cover {
+    background: var(--teal-deep);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  /* Geometric background pattern */
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(135deg, transparent 40%, rgba(212,175,80,0.04) 40%, rgba(212,175,80,0.04) 60%, transparent 60%),
+      linear-gradient(45deg, transparent 40%, rgba(0,140,130,0.08) 40%, rgba(0,140,130,0.08) 60%, transparent 60%);
+    background-size: 80px 80px, 80px 80px;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(ellipse at 80% 20%, rgba(212,175,80,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .cover-top {
+    padding: 40px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cover-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 1px;
+  }
+  .cover-brand span { color: var(--gold); }
+
+  .cover-tag {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .cover-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 72px;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .cover-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .cover-eyebrow-line {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .cover-eyebrow-text {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .cover h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+  }
+  .cover h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight: 300;
+  }
+  .cover h1 strong {
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .cover-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.6);
+    max-width: 500px;
+    line-height: 1.8;
+    margin-top: 24px;
+    margin-bottom: 56px;
+    border-left: 2px solid var(--gold);
+    padding-left: 20px;
+  }
+
+  .cover-stats {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .cover-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cover-stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .cover-stat-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .cover-bottom {
+    padding: 32px 72px;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover-bottom p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    font-style: italic;
+  }
+  .cover-scroll {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+  }
+
+  /* ═══════════════════════════════════
+     OPENING STATEMENT
+  ═══════════════════════════════════ */
+  .opening {
+    background: var(--white);
+    padding: 80px 72px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .opening-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 20px;
+    display: block;
+  }
+  .opening h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .opening h2 em { font-style: italic; color: var(--teal); }
+
+  .opening-lead {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--ink-mid);
+    margin-bottom: 24px;
+  }
+  .opening-body {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+    text-align: left;
+  }
+
+  /* ═══════════════════════════════════
+     THE CORE INSIGHT BANNER
+  ═══════════════════════════════════ */
+  .insight-banner {
+    background: var(--teal);
+    padding: 56px 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .insight-banner::before {
+    content: '"';
+    position: absolute;
+    top: -20px; left: 56px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 200px;
+    color: rgba(255,255,255,0.07);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .insight-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .insight-banner blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  .insight-banner blockquote strong {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+  .insight-attribution {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ═══════════════════════════════════
+     BENEFITS SECTION
+  ═══════════════════════════════════ */
+  .benefits {
+    padding: 80px 72px;
+    background: var(--cream);
+  }
+  .benefits-header {
+    max-width: 620px;
+    margin-bottom: 56px;
+  }
+  .benefits-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .benefits-header h2 em { font-style: italic; color: var(--teal); }
+  .benefits-header p {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.85;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .benefit-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+  .benefit-card:hover {
+    box-shadow: 0 8px 32px rgba(0,75,70,0.08);
+  }
+
+  .benefit-card-top {
+    padding: 32px 32px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .benefit-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--teal-mist);
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+  .benefit-card.highlight .benefit-number { color: var(--gold-mist); }
+
+  .benefit-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 4px;
+    padding-top: 8px;
+  }
+  .benefit-subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+  .benefit-card.highlight .benefit-subtitle { color: var(--gold-dark); }
+
+  .benefit-body {
+    padding: 16px 32px 28px 32px;
+  }
+  .benefit-body p {
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.85;
+    font-weight: 300;
+  }
+  .benefit-body p strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .benefit-example {
+    margin: 16px 32px 28px;
+    background: var(--teal-mist);
+    border-left: 3px solid var(--teal);
+    padding: 14px 18px;
+    border-radius: 0 2px 2px 0;
+  }
+  .benefit-card.highlight .benefit-example {
+    background: var(--gold-mist);
+    border-left-color: var(--gold);
+  }
+  .benefit-example-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--teal-dark);
+    margin-bottom: 6px;
+  }
+  .benefit-card.highlight .benefit-example-label { color: var(--gold-dark); }
+  .benefit-example p {
+    font-size: 13px;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  /* Full-width card */
+  .benefit-card.full {
+    grid-column: 1 / -1;
+  }
+  .benefit-card.full .benefit-card-top {
+    padding: 36px 40px 0;
+  }
+  .benefit-card.full .benefit-body {
+    padding: 16px 40px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .benefit-card.full .benefit-example {
+    margin: 0 40px 32px;
+    grid-column: 1 / -1;
+  }
+
+  /* ═══════════════════════════════════
+     THE REAL MATH SECTION
+  ═══════════════════════════════════ */
+  .math-section {
+    background: var(--ink);
+    padding: 80px 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .math-section::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(0,140,130,0.08) 100%);
+    pointer-events: none;
+  }
+
+  .math-header {
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  .math-header .section-label { color: var(--gold); }
+  .math-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .math-header h2 em { font-style: italic; color: var(--teal-light); }
+  .math-header p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    max-width: 560px;
+  }
+
+  .math-scenario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 32px;
+  }
+
+  .scenario-card {
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .scenario-header {
+    padding: 20px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .scenario-header.property { background: rgba(0,140,130,0.15); }
+  .scenario-header.income { background: rgba(212,175,80,0.12); }
+
+  .scenario-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+  .scenario-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
+  }
+
+  .scenario-rows {
+    background: rgba(255,255,255,0.03);
+    padding: 8px 0;
+  }
+  .scenario-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .scenario-row:last-child { border-bottom: none; }
+  .scenario-row-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 300;
+  }
+  .scenario-row-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+  }
+  .scenario-row-value.positive { color: var(--teal-light); }
+  .scenario-row-value.gold { color: var(--gold-light); }
+  .scenario-row-value.muted { color: rgba(255,255,255,0.4); font-style: italic; font-size: 12px; }
+
+  .scenario-row.total {
+    background: rgba(255,255,255,0.06);
+    margin-top: 4px;
+  }
+  .scenario-row.total .scenario-row-label {
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .scenario-row.total .scenario-row-value {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .math-note {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid var(--gold);
+    padding: 16px 24px;
+    border-radius: 0 2px 2px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .math-note p {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.45);
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .math-note p strong { color: rgba(255,255,255,0.65); font-style: normal; }
+
+  /* ═══════════════════════════════════
+     THE MANAGEMENT ARGUMENT
+  ═══════════════════════════════════ */
+  .management-section {
+    background: var(--white);
+    padding: 80px 72px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .management-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: center;
+  }
+
+  .management-left h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+  .management-left h2 em { font-style: italic; color: var(--teal); }
+
+  .management-left p {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-mid);
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+  .management-left p strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .management-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mgmt-point {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 20px 22px;
+    background: var(--cream);
+    border-radius: 3px;
+    border: 1px solid var(--rule);
+  }
+  .mgmt-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 15px;
+  }
+  .mgmt-text { flex: 1; }
+  .mgmt-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .mgmt-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* ═══════════════════════════════════
+     VERANDAH DIFFERENCE
+  ═══════════════════════════════════ */
+  .verandah-section {
+    background: var(--cream-dark);
+    padding: 72px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .verandah-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .verandah-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 28px;
+    line-height: 1.2;
+  }
+  .verandah-section h2 em { font-style: italic; color: var(--teal); }
+
+  .verandah-body {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-mid);
+    line-height: 1.95;
+    margin-bottom: 36px;
+  }
+  .verandah-body p { margin-bottom: 18px; }
+  .verandah-body p strong { color: var(--ink); font-weight: 600; }
+
+  .differentiators {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .diff-item {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--teal);
+    padding: 20px 18px;
+    border-radius: 2px;
+  }
+  .diff-item.gold-top { border-top-color: var(--gold); }
+  .diff-icon { font-size: 22px; margin-bottom: 10px; }
+  .diff-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .diff-text {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* ═══════════════════════════════════
+     DISCLAIMER
+  ═══════════════════════════════════ */
+  .disclaimer {
+    background: var(--cream);
+    padding: 32px 72px;
+    border-top: 1px solid var(--rule);
+  }
+  .disclaimer-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .disclaimer-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .disclaimer p {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    font-style: italic;
+  }
+  .disclaimer p strong { font-style: normal; color: var(--ink-mid); }
+
+  /* ═══════════════════════════════════
+     CTA / FOOTER
+  ═══════════════════════════════════ */
+  .cta-section {
+    background: var(--teal-dark);
+    padding: 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    bottom: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(212,175,80,0.07);
+    pointer-events: none;
+  }
+
+  .cta-inner {
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-section .section-label { color: var(--gold); margin-bottom: 16px; }
+  .cta-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .cta-section h2 em { font-style: italic; color: var(--gold-light); }
+
+  .cta-section p {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.85;
+    margin-bottom: 40px;
+    max-width: 520px;
+  }
+
+  .cta-contacts {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .cta-contact {
+    border-left: 2px solid var(--gold);
+    padding-left: 16px;
+  }
+  .cta-contact-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 4px;
+  }
+  .cta-contact-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--white);
+  }
+  .cta-contact-value a {
+    color: var(--gold-light);
+    text-decoration: none;
+  }
+
+  .footer-bar {
+    background: var(--teal-deep);
+    padding: 24px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+  }
+  .footer-bar-brand span { color: var(--gold); }
+  .footer-bar-info {
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    text-align: right;
+    line-height: 1.8;
+  }
+
+  /* ═══════════════════════════════════
+     RESPONSIVE
+  ═══════════════════════════════════ */
+  @media (max-width: 768px) {
+    .cover h1 { font-size: 42px; }
+    .cover-top, .cover-body, .cover-bottom,
+    .opening, .insight-banner, .benefits,
+    .math-section, .management-section,
+    .verandah-section, .disclaimer, .cta-section,
+    .footer-bar { padding-left: 28px; padding-right: 28px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .benefit-card.full .benefit-body { grid-template-columns: 1fr; }
+    .math-scenario { grid-template-columns: 1fr; }
+    .management-inner { grid-template-columns: 1fr; gap: 36px; }
+    .differentiators { grid-template-columns: 1fr 1fr; }
+    .cover-stats { gap: 28px; }
+  }
+
+  @media print {
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .cover { min-height: auto; padding-bottom: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════ COVER ═══════ -->
+<div class="cover">
+  <div class="cover-top">
+    <div class="cover-brand">Verandah <span>Properties</span></div>
+    <div class="cover-tag">Lake Nona · Greater Orlando, Florida</div>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-eyebrow">
+      <div class="cover-eyebrow-line"></div>
+      <div class="cover-eyebrow-text">A Resource for High-Income Professionals</div>
+    </div>
+    <h1>The <em>Physician Owner's</em><br><strong>Guide</strong> to Lake Nona<br>Real Estate</h1>
+    <p class="cover-subtitle">
+      Why owning a professionally managed investment property in Lake Nona is one of the most tax-efficient, wealth-building decisions a high-income professional can make — and why having it fully managed is not a limitation. It's the point.
+    </p>
+    <div class="cover-stats">
+      <div class="cover-stat">
+        <div class="cover-stat-number">20+</div>
+        <div class="cover-stat-label">Years Lake Nona Expertise</div>
+      </div>
+      <div class="cover-stat">
+        <div class="cover-stat-number">5</div>
+        <div class="cover-stat-label">Key Tax Advantages</div>
+      </div>
+      <div class="cover-stat">
+        <div class="cover-stat-number">$0</div>
+        <div class="cover-stat-label">Self-Management Required</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <p>This guide is for informational purposes only and does not constitute tax, legal, or financial advice. Consult your CPA before making any investment decisions.</p>
+    <div class="cover-scroll">Scroll to read ↓</div>
+  </div>
+</div>
+
+<!-- ═══════ OPENING ═══════ -->
+<div class="opening">
+  <div class="opening-inner">
+    <span class="section-label">Why This Matters</span>
+    <h2>Most high-income professionals<br>are leaving <em>significant money</em> on the table.</h2>
+    <p class="opening-lead">
+      The U.S. tax code was written to reward two kinds of people: business owners and real estate investors. If you're a high-earning physician on a W-2, you're likely neither — which means you're paying taxes at the highest effective rate with very few legal tools to reduce them.
+    </p>
+    <p class="opening-body">
+      Real estate is the exception. It is the one asset class the IRS has consistently favored with depreciation benefits, preferential capital gains rates, and powerful deferral mechanisms that apply regardless of how actively you manage the property. You don't need to take a landlord course. You don't need to answer maintenance calls. You don't need to become a real estate expert. You need a property worth owning, a market worth owning it in, and a management partner you can trust completely.
+      <br><br>
+      That is precisely what this guide — and Verandah Properties — is designed to address.
+    </p>
+  </div>
+</div>
+
+<!-- ═══════ CORE INSIGHT BANNER ═══════ -->
+<div class="insight-banner">
+  <div class="insight-inner">
+    <blockquote>
+      "Professional management isn't the thing that reduces the tax benefits of owning real estate.<br>
+      It's the thing that makes the investment <strong>actually work</strong> so the tax benefits are worth having."
+    </blockquote>
+    <div class="insight-attribution">— Pamela Syvertson, Owner & Broker · Verandah Properties · Lake Nona, FL</div>
+  </div>
+</div>
+
+<!-- ═══════ BENEFITS ═══════ -->
+<div class="benefits">
+  <div class="benefits-header">
+    <span class="section-label">The Five Advantages</span>
+    <h2>What <em>every</em> professionally managed<br>rental property delivers</h2>
+    <p>These five benefits apply to any high-income owner using a professional property manager — no self-management required, no special IRS designation required, no asterisks. Just own the right property in the right market.</p>
+  </div>
+
+  <div class="benefits-grid">
+
+    <!-- BENEFIT 1 -->
+    <div class="benefit-card highlight">
+      <div class="benefit-card-top">
+        <div class="benefit-number">01</div>
+        <div>
+          <div class="benefit-title">Depreciation Shelters the Income You're Actually Collecting</div>
+          <div class="benefit-subtitle">The Paper Loss Nobody Talks About</div>
+        </div>
+      </div>
+      <div class="benefit-body">
+        <p>The IRS allows you to deduct the theoretical aging of your building over time — a "paper expense" called depreciation. This deduction is applied against your rental income, often wiping out most or all of it on paper. <strong>The result: you collect the rent check and pay little or no income tax on it.</strong></p>
+        <p style="margin-top:12px;">Your property continues to appreciate in real value while your tax return shows little or no income. This is not a loophole. It is exactly what the tax code was designed to do.</p>
+      </div>
+      <div class="benefit-example">
+        <div class="benefit-example-label">In Practice</div>
+        <p>A Lake Nona property generating $42,000 in annual rent may show zero taxable rental income after depreciation — meaning the owner collects every dollar and keeps it, tax-sheltered.</p>
+      </div>
+    </div>
+
+    <!-- BENEFIT 2 -->
+    <div class="benefit-card">
+      <div class="benefit-card-top">
+        <div class="benefit-number">02</div>
+        <div>
+          <div class="benefit-title">Passive Losses Accumulate and Deploy at the Perfect Moment</div>
+          <div class="benefit-subtitle">A Forced Tax Shield — Building Quietly</div>
+        </div>
+      </div>
+      <div class="benefit-body">
+        <p>For high earners above the $150,000 income threshold, passive rental losses cannot be used to offset W-2 income in the current year. <strong>But they don't disappear — they carry forward indefinitely.</strong></p>
+        <p style="margin-top:12px;">Every year those suspended losses accumulate, they are building a tax shield that deploys at exactly the right moment: when the property sells and generates a significant gain. Years of carried-forward losses offset that gain at sale — dramatically reducing or eliminating the tax owed at the most valuable moment.</p>
+      </div>
+      <div class="benefit-example">
+        <div class="benefit-example-label">In Practice</div>
+        <p>An owner accumulates $90,000 in carried-forward losses over 8 years. When they sell the property with a $120,000 gain, those losses offset the taxable gain — saving potentially $30,000+ in taxes at the moment it matters most.</p>
+      </div>
+    </div>
+
+    <!-- BENEFIT 3 -->
+    <div class="benefit-card">
+      <div class="benefit-card-top">
+        <div class="benefit-number">03</div>
+        <div>
+          <div class="benefit-title">Long-Term Capital Gains at Preferential Rates</div>
+          <div class="benefit-subtitle">Your Appreciation Is Taxed at 20% — Not 37%</div>
+        </div>
+      </div>
+      <div class="benefit-body">
+        <p>A physician in the top tax bracket pays 37% on every additional dollar of W-2 income. When a Lake Nona property appreciates by $200,000 over a decade, that gain is taxed as a long-term capital gain — at a maximum rate of 20%. <strong>That 17-point differential on $200,000 is a $34,000 advantage simply from choosing the right asset class.</strong></p>
+        <p style="margin-top:12px;">In a market like Lake Nona — which has demonstrated consistent, significant appreciation — this is not a hypothetical benefit. It is a predictable, structural advantage of holding real estate.</p>
+      </div>
+      <div class="benefit-example">
+        <div class="benefit-example-label">In Practice</div>
+        <p>A $600,000 Lake Nona home purchased today and sold in 10 years at $850,000 generates $250,000 in long-term gain — taxed at 20% rather than the 37% rate applied to the physician's clinical income.</p>
+      </div>
+    </div>
+
+    <!-- BENEFIT 4 -->
+    <div class="benefit-card highlight">
+      <div class="benefit-card-top">
+        <div class="benefit-number">04</div>
+        <div>
+          <div class="benefit-title">The 1031 Exchange — Unlimited Deferral, For Life</div>
+          <div class="benefit-subtitle">The Wealthiest Real Estate Strategy Available</div>
+        </div>
+      </div>
+      <div class="benefit-body">
+        <p>When an owner is ready to sell, they can roll the entire proceeds into a new property through a 1031 exchange and defer the capital gains tax entirely. <strong>This can be repeated indefinitely — trade up, trade sideways, trade across markets — without ever triggering a tax event.</strong></p>
+        <p style="margin-top:12px;">When the owner ultimately passes the property to their heirs, the accumulated gain receives a stepped-up cost basis — meaning the decades of deferred gains are eliminated entirely. The wealth transfers. The tax bill doesn't.</p>
+      </div>
+      <div class="benefit-example">
+        <div class="benefit-example-label">In Practice</div>
+        <p>An owner sells their Lake Nona property with a $300,000 gain, rolls it into a larger property via 1031, repeats the process twice more over 20 years — and passes the final property to their children with zero capital gains tax ever paid on any of the accumulated appreciation.</p>
+      </div>
+    </div>
+
+    <!-- BENEFIT 5 — FULL WIDTH -->
+    <div class="benefit-card full">
+      <div class="benefit-card-top">
+        <div class="benefit-number">05</div>
+        <div>
+          <div class="benefit-title">No Self-Employment Tax on Rental Income</div>
+          <div class="benefit-subtitle">A Cleaner Form of Income Than Almost Anything Else Available to a W-2 Earner</div>
+        </div>
+      </div>
+      <div class="benefit-body">
+        <p>Every dollar of clinical income a physician earns is subject to Social Security and Medicare taxes — and high earners pay an additional 0.9% Medicare surcharge above $200,000. Passive rental income carries none of these burdens. <strong>Rental income is simply a more tax-efficient form of income than W-2 income by structural design.</strong></p>
+        <p>Combined with depreciation sheltering that income from regular income taxes as well, a well-managed rental property is one of the few places a high-income W-2 professional can generate regular income with minimal tax drag — legally, reliably, and without managing a single repair.</p>
+      </div>
+      <div class="benefit-example">
+        <div class="benefit-example-label">The Bottom Line</div>
+        <p>A physician collecting $42,000 per year in rent from a professionally managed Lake Nona property may pay near zero in federal income tax on that income thanks to depreciation — and zero in self-employment taxes by virtue of it being passive rental income. The same $42,000 earned clinically would be taxed at 37%+ federal plus FICA. The difference in after-tax outcome between these two $42,000 income streams is profound.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════ THE MATH ═══════ -->
+<div class="math-section">
+  <div class="math-header">
+    <span class="section-label">Illustrative Scenario</span>
+    <h2>What a Lake Nona rental property<br>looks like <em>in real numbers</em></h2>
+    <p>The following is a simplified illustrative example. Individual results will vary based on property, financing, and tax situation. Consult your CPA for analysis specific to your circumstances.</p>
+  </div>
+
+  <div class="math-scenario">
+    <div class="scenario-card">
+      <div class="scenario-header property">
+        <div class="scenario-title">The Property</div>
+        <div class="scenario-sub">Lake Nona Single-Family — Illustrative Example</div>
+      </div>
+      <div class="scenario-rows">
+        <div class="scenario-row">
+          <div class="scenario-row-label">Purchase Price</div>
+          <div class="scenario-row-value">$650,000</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Monthly Rent</div>
+          <div class="scenario-row-value positive">$3,500 / mo</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Annual Gross Rent</div>
+          <div class="scenario-row-value positive">$42,000</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Annual Depreciation (est.)</div>
+          <div class="scenario-row-value gold">~$17,000 paper deduction</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Operating Expenses + Mgmt</div>
+          <div class="scenario-row-value">~$14,000</div>
+        </div>
+        <div class="scenario-row total">
+          <div class="scenario-row-label">Taxable Rental Income</div>
+          <div class="scenario-row-value gold">~$11,000 or less</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Vs. Gross Rent Collected</div>
+          <div class="scenario-row-value positive">$42,000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scenario-card">
+      <div class="scenario-header income">
+        <div class="scenario-title">The Tax Picture</div>
+        <div class="scenario-sub">High-Income W-2 Physician — Illustrative Comparison</div>
+      </div>
+      <div class="scenario-rows">
+        <div class="scenario-row">
+          <div class="scenario-row-label">Tax rate on clinical income</div>
+          <div class="scenario-row-value">37% federal</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">FICA / Medicare on clinical income</div>
+          <div class="scenario-row-value">2.9%–3.8%</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Tax rate on rental income</div>
+          <div class="scenario-row-value positive">Minimal after depreciation</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">FICA on rental income</div>
+          <div class="scenario-row-value positive">$0</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">Capital gains rate at sale</div>
+          <div class="scenario-row-value gold">20% max (vs. 37% W-2)</div>
+        </div>
+        <div class="scenario-row">
+          <div class="scenario-row-label">1031 Exchange available</div>
+          <div class="scenario-row-value positive">Yes — indefinite deferral</div>
+        </div>
+        <div class="scenario-row total">
+          <div class="scenario-row-label">Self-management required</div>
+          <div class="scenario-row-value positive">None</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="math-note">
+    <p><strong>Important:</strong> These figures are illustrative estimates based on typical Lake Nona market conditions and general tax principles as of 2025–2026. Actual depreciation, taxable income, and tax liability depend on your specific property, financing structure, expenses, and individual tax situation. This is not tax advice. Always work with a qualified CPA experienced in real estate before making investment decisions.</p>
+  </div>
+</div>
+
+<!-- ═══════ THE MANAGEMENT ARGUMENT ═══════ -->
+<div class="management-section">
+  <div class="management-inner">
+    <div class="management-left">
+      <span class="section-label">The Essential Point</span>
+      <h2>Professional management isn't<br>a cost. It's what makes<br>the strategy <em>sustainable.</em></h2>
+      <p>A poorly managed property with chronic vacancies, deferred maintenance, and difficult tenants isn't a tax strategy. It's a headache with a depreciation schedule.</p>
+      <p>The tax benefits of real estate ownership are real — but they are only worth capturing if the underlying investment is performing. <strong>A well-managed Lake Nona property with a stable, long-term tenant, maintained to a high standard, generating consistent and predictable rental income — that is the vehicle through which every benefit in this guide is delivered.</strong></p>
+      <p>This is precisely why the physicians who own investment property successfully are not the ones who manage it themselves. They are the ones who found a management partner they could trust — and focused their attention on their practice.</p>
+    </div>
+    <div class="management-right">
+      <div class="mgmt-point">
+        <div class="mgmt-icon">🏠</div>
+        <div class="mgmt-text">
+          <div class="mgmt-title">Maintenance-First Philosophy</div>
+          <div class="mgmt-desc">A well-maintained property attracts the tenants who stay for multiple years, pay on time, and treat your home the way you would want your own treated. This is not theory — it is pattern recognition from 20 years of data.</div>
+        </div>
+      </div>
+      <div class="mgmt-point">
+        <div class="mgmt-icon">📊</div>
+        <div class="mgmt-text">
+          <div class="mgmt-title">Transparent Owner Communication</div>
+          <div class="mgmt-desc">You hear from us when something matters — not every time a light bulb changes. Clear, honest, data-driven reporting so you always know how your asset is performing.</div>
+        </div>
+      </div>
+      <div class="mgmt-point">
+        <div class="mgmt-icon">🎯</div>
+        <div class="mgmt-text">
+          <div class="mgmt-title">Hyper-Local Market Knowledge</div>
+          <div class="mgmt-desc">Lake Nona is our primary focus and the community we know most deeply. We know which micro-neighborhoods are trending, what comparable properties are actually achieving, and how to position your property to attract and retain exceptional tenants.</div>
+        </div>
+      </div>
+      <div class="mgmt-point">
+        <div class="mgmt-icon">🤝</div>
+        <div class="mgmt-text">
+          <div class="mgmt-title">Selective by Design</div>
+          <div class="mgmt-desc">We don't take every property — or every owner. We begin every relationship with a conversation to confirm alignment. This selectivity is what makes our portfolio perform.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ THE VERANDAH DIFFERENCE ═══════ -->
+<div class="verandah-section">
+  <div class="verandah-inner">
+    <span class="section-label">Why Verandah Properties</span>
+    <h2>Boutique. Selective. <em>Hyper-local.</em><br>Everything a white-glove owner needs.</h2>
+    <div class="verandah-body">
+      <p>Verandah Properties has been managing properties in the Greater Orlando area for over 20 years, with a deep specialization in the Lake Nona market. We are not a franchise. We are not a volume operation. We are a boutique firm that has grown by reputation — owner by owner, property by property — because the people we work with trust us completely and the results speak for themselves.</p>
+      <p>Lake Nona is where our heart is and where we are intentionally building our white-glove portfolio. We are selective about who we work with because <strong>the quality of the relationship determines the quality of the outcome.</strong> When we take on a property, we are committing to it — to maintaining it, pricing it correctly, placing the right tenant, and managing it as though it were our own. That commitment requires alignment on standards from the start.</p>
+    </div>
+
+    <div class="differentiators">
+      <div class="diff-item">
+        <div class="diff-icon">📍</div>
+        <div class="diff-title">Lake Nona Focused</div>
+        <div class="diff-text">Lake Nona is our primary market and where we are deliberately building our white-glove portfolio. Our depth of local knowledge — vendors, pricing, tenant patterns, micro-market trends — reflects 20 years of intentional focus on this community.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">⭐</div>
+        <div class="diff-title">Boutique Portfolio</div>
+        <div class="diff-text">We deliberately keep our portfolio small so that every property and every owner receives genuine, attentive management — not a ticketing system and a call center.</div>
+      </div>
+      <div class="diff-item gold-top">
+        <div class="diff-icon">🛡️</div>
+        <div class="diff-title">Owner Protection Programs</div>
+        <div class="diff-text">Access to the Landlord Shield insurance program and SureVestor — protections available exclusively through professional management that are simply not available to self-managing owners.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">🔍</div>
+        <div class="diff-title">Rigorous Tenant Screening</div>
+        <div class="diff-text">We screen for the tenant who will care for your property, communicate professionally, and want to stay. Speed of placement is never prioritized over quality of fit.</div>
+      </div>
+      <div class="diff-item gold-top">
+        <div class="diff-icon">💬</div>
+        <div class="diff-title">Honest Communication</div>
+        <div class="diff-text">We tell owners what they need to hear — about pricing, property condition, and market reality — even when it is not what they expected. Trust is built on truth, not comfort.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">📱</div>
+        <div class="diff-title">Seamless Remote Ownership</div>
+        <div class="diff-text">Designed for the owner who lives elsewhere or simply does not want to be involved in day-to-day operations. You own the asset. We manage everything else.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ DISCLAIMER ═══════ -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <div class="disclaimer-icon">⚖️</div>
+    <p><strong>Important Disclaimer:</strong> Verandah Properties is a property management firm, not a tax advisory or financial planning service. The information in this guide is provided for general educational purposes and reflects broadly applicable principles of real estate taxation as generally understood. It does not constitute tax, legal, or financial advice and should not be relied upon as such. Tax laws change, and individual circumstances vary significantly. <strong>Always consult a qualified CPA or tax attorney</strong> — preferably one with specific experience in real estate investment — before making any investment or tax planning decisions.</p>
+  </div>
+</div>
+
+<!-- ═══════ CTA ═══════ -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <span class="section-label">Start the Conversation</span>
+    <h2>If this resonates,<br>let's have a <em>real conversation.</em></h2>
+    <p>We begin every potential owner relationship with a no-pressure conversation — about your property, your goals, and whether Verandah is genuinely the right fit. We're selective, and we want you to be too.</p>
+    <div class="cta-contacts">
+      <div class="cta-contact">
+        <div class="cta-contact-label">Speak with Pamela directly</div>
+        <div class="cta-contact-value">(407) 855-0331</div>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-label">Email</div>
+        <div class="cta-contact-value"><a href="mailto:pamela@verandahproperties.com">pamela@verandahproperties.com</a></div>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-label">Learn More</div>
+        <div class="cta-contact-value"><a href="https://verandahproperties.com">VerandahProperties.com</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-bar">
+  <div class="footer-bar-brand">Verandah <span>Properties</span>, LLC · Lake Nona · Greater Orlando, Florida</div>
+  <div class="footer-bar-info">
+   
